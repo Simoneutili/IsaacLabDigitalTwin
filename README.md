@@ -23,6 +23,8 @@ This work presents an architecture that:
 - **scripts/TIAGO_RL/**: Contains Isaac Lab RL environment definition, training scripts, hyperparameter tuning modules, and deployment procedures.
 - **IsaacLabTiagoExtension/**: Integration components for NVIDIA Isaac Lab with the TIAGo simulation.
 
+![Isaac Lab](./images/IsaacLabEnvs.jpg)
+
 ## Installation and Setup
 
 ### 1. Install the ROS2 TIAGo Simulation Workspace
