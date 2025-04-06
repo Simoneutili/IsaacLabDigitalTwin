@@ -1,12 +1,16 @@
-# Digital Twin of TIAGo Robotic Manipulator
+![Digital Twin](./images/DigitalTwin.png)
+# Real2Sim Enhanced Digital Twin of TIAGo Robotic Manipulator
 
-This repository contains the code and configuration files for an Automation Engineering Thesis project that develops an Isaac Lab-based digital twin of the TIAGo robotic manipulator. The project leverages a real-to-sim approach combined with advanced Reinforcement Learning techniques to optimize the dynamic parameters of the simulated model in real time, ensuring that its behavior closely mirrors that of the physical robot.
+This project contributes to the field of simulation calibration, aiming to reduce the simulation-to-reality (sim2real) gap. It focuses specifically on the NVIDIA Omniverse Isaac Sim simulation software and the Isaac Lab Reinforcement Learning (RL) framework.
 
 ## Project Overview
 
+This repository contains the code and configuration files for an Automation Engineering Thesis project that develops an Isaac Lab-based digital twin of the TIAGo robotic manipulator. The project leverages a real-to-sim approach combined with advanced Reinforcement Learning techniques to perform online optimization of the simulated robot parameters within  Isaac Lab framework, ensuring that its behavior closely mirrors that of the physical robot.
+The digital twin is implemented to perform velocity control for the 7-joint TIAGo robotic arm, ensuring matched joint responses upon sending periodic velocity commands.
+
 This work presents an architecture that:
 - **Enhances Simulation Fidelity:** Improves the Isaac Lab simulation's accuracy by online optimization of dynamic parameters.
-- **Real-Time Parameter Optimization:** Uses a Reinforcement Learning (RL) algorithm to adaptively estimate and optimize joint parameters, minimizing velocity errors.
+- **Real-Time Parameter Optimization:** Uses a RL algorithm to adaptively estimate and optimize joint parameters, minimizing velocity errors.
 - **Curriculum Learning:** Gradually calibrates the seven joint parameters of the robot arm during training.
 - **Algorithm Comparison:** Compares state-of-the-art Deep RL algorithms (SAC and PPO) via Stable-Baselines3.
 - **Hyperparameter Tuning:** Implements a pipeline to fine-tune learning curves and increase cumulative rewards.
