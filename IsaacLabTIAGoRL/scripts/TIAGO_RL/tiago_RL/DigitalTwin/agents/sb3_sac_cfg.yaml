@@ -1,0 +1,34 @@
+# Reference: https://github.com/DLR-RM/rl-baselines3-zoo/blob/master/hyperparams/ppo.yml#L32
+
+# PPO default hyperparameters
+
+# learning_rate=0.0003, n_steps=2048, batch_size=64, 
+# n_epochs=10, gamma=0.99, gae_lambda=0.95, clip_range=0.2, clip_range_vf=None, normalize_advantage=True, 
+# ent_coef=0.0, vf_coef=0.5, max_grad_norm=0.5, use_sde=False, sde_sample_freq=-1, target_kl=None, 
+# tensorboard_log=None, policy_kwargs=None, verbose=0, seed=None, device='auto', _init_setup_model=True)
+
+
+# SAC Configuration for Stable-Baselines3
+# Reference: https://stable-baselines3.readthedocs.io/en/master/modules/sac.html
+
+
+# General training parameters (DEFAULT)
+policy: MlpPolicy
+seed: 42
+batch_size: 256
+buffer_size: 100000
+ent_coef: 0.0021836766280786475
+gamma: 0.912983308291599
+gradient_steps: 1
+learning_rate: 0.0012791799721651705
+tau: 0.04744387257572842
+train_freq: 1
+n_timesteps: 10000000.0
+policy_kwargs:
+  activation_fn: relu
+  net_arch:
+  - 256
+  - 256
+normalize_input: true
+normalize_value: true
+clip_obs: 10.0

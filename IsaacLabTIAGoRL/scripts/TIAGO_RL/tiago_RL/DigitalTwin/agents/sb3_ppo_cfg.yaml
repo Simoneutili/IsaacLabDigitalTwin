@@ -1,0 +1,78 @@
+# Reference: https://github.com/DLR-RM/rl-baselines3-zoo/blob/master/hyperparams/ppo.yml#L32
+
+# PPO default hyperparameters
+
+# learning_rate=0.0003, n_steps=2048, batch_size=64, 
+# n_epochs=10, gamma=0.99, gae_lambda=0.95, clip_range=0.2, clip_range_vf=None, normalize_advantage=True, 
+# ent_coef=0.0, vf_coef=0.5, max_grad_norm=0.5, use_sde=False, sde_sample_freq=-1, target_kl=None, 
+# tensorboard_log=None, policy_kwargs=None, verbose=0, seed=None, device='auto', _init_setup_model=True)
+
+
+# SAC Configuration for Stable-Baselines3
+# Reference: https://stable-baselines3.readthedocs.io/en/master/modules/sac.html
+
+
+# General training parameters (DEFAULT)
+policy: "MlpPolicy"  # Default policy type (MlpPolicy for MLP, CnnPolicy for CNNs)
+seed: 42  # Random seed
+learning_rate: 0.0003  # Adam optimizer learning rate
+n_steps: 2048  # Number of steps per environment before updating the policy
+batch_size: 64  # Minibatch size for training
+n_epochs: 10  # Number of times each batch of data is used to train
+gamma: 0.99  # Discount factor for future rewards
+gae_lambda: 0.95  # Factor for Generalized Advantage Estimation (GAE)
+clip_range: 0.2  # Clipping parameter for PPO
+ent_coef: 0.0  # Entropy coefficient (encourages exploration)
+vf_coef: 0.5  # Value function loss coefficient
+max_grad_norm: 0.5  # Gradient clipping threshold
+n_timesteps: 1000000.0  # Total number of samples (env steps) to train the agent
+# normalize_input: true
+# normalize_value: true
+# clip_obs: 10.0
+
+
+# MULTIPLE JOINTS
+# policy: MlpPolicy
+# seed: 42
+# ent_coef: 0.004206380183242771
+# tau: 0.007034269194366279
+# learning_rate: 0.002567587860589075
+# batch_size: 256
+# buffer_size: 100000
+# gamma: 0.9245891233121282
+# train_freq: 1
+# gradient_steps: 7
+# n_timesteps: 1000000.0
+# policy_kwargs:
+#   activation_fn: tanh
+#   net_arch:
+#   - 28
+#   - 241
+# normalize_input: true
+# normalize_value: true
+# clip_obs: 10.0
+
+
+
+
+
+# #   CURRICULUM 
+# policy: MlpPolicy
+# seed: 42
+# batch_size: 64
+# buffer_size: 50000
+# ent_coef: 0.0022973194766649297
+# gamma: 0.9561593663688829
+# gradient_steps: 22
+# learning_rate: 0.0002047082946943019
+# tau: 0.0011719529374013818
+# train_freq: 10
+# n_timesteps: 1000000.0
+# policy_kwargs:
+#   activation_fn: tanh
+#   net_arch:
+#   - 16
+#   - 182
+# normalize_input: true
+# normalize_value: true
+# clip_obs: 10.0

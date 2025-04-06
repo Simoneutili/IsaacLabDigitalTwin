@@ -1,0 +1,11 @@
+pyproject.toml
+setup.py
+test/test_env.py
+test/test_velocity_control.py
+tiago_RL/__init__.py
+tiago_reinforcement_learning.egg-info/PKG-INFO
+tiago_reinforcement_learning.egg-info/SOURCES.txt
+tiago_reinforcement_learning.egg-info/dependency_links.txt
+tiago_reinforcement_learning.egg-info/not-zip-safe
+tiago_reinforcement_learning.egg-info/requires.txt
+tiago_reinforcement_learning.egg-info/top_level.txt
