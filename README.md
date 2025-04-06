@@ -1,11 +1,11 @@
 # Digital Twin of TIAGo Robotic Manipulator
 
-This repository contains the code and configuration files for a thesis project that develops a high-fidelity digital twin of the TIAGo robotic manipulator. The project leverages a real-to-sim approach combined with advanced Reinforcement Learning techniques to optimize the dynamic parameters of the simulated model in real time, ensuring that its behavior closely mirrors that of the physical robot.
+This repository contains the code and configuration files for an Automation Engineering Thesis project that develops an Isaac Lab-based digital twin of the TIAGo robotic manipulator. The project leverages a real-to-sim approach combined with advanced Reinforcement Learning techniques to optimize the dynamic parameters of the simulated model in real time, ensuring that its behavior closely mirrors that of the physical robot.
 
 ## Project Overview
 
 This work presents an architecture that:
-- **Enhances Simulation Fidelity:** Improves the simulation's accuracy by online optimization of dynamic parameters.
+- **Enhances Simulation Fidelity:** Improves the Isaac Lab simulation's accuracy by online optimization of dynamic parameters.
 - **Real-Time Parameter Optimization:** Uses a Reinforcement Learning (RL) algorithm to adaptively estimate and optimize joint parameters, minimizing velocity errors.
 - **Curriculum Learning:** Gradually calibrates the seven joint parameters of the robot arm during training.
 - **Algorithm Comparison:** Compares state-of-the-art Deep RL algorithms (SAC and PPO) via Stable-Baselines3.
@@ -16,7 +16,7 @@ This work presents an architecture that:
 ## Repository Structure
 
 - **tiago_public_ws/**: ROS2 workspace for the TIAGo simulation.
-- **scripts/TIAGO_RL/**: Contains RL environment definition, training scripts, hyperparameter tuning modules, and deployment procedures.
+- **scripts/TIAGO_RL/**: Contains Isaac Lab RL environment definition, training scripts, hyperparameter tuning modules, and deployment procedures.
 - **IsaacLabTiagoExtension/**: Integration components for NVIDIA Isaac Lab with the TIAGo simulation.
 
 ## Installation and Setup
@@ -102,13 +102,23 @@ After training, deploy the policy for real-time testing:
 python TIAGO_RL/tiago_RL/ISAACLAB_TEST/SB3/deploy.py --task Isaac-DigitalTwin-TiAGO-v0 --num_envs 1
 ```
 
-## Requirements
+## 🛠️ Requirements and Setup
 
-Before running the project, ensure you have the following installed:
+The following software components were used during the development of this project. These represent the tested configuration; other versions might also be compatible but have not been explicitly validated.
 
-- **ROS2**
-- **Gazebo**
-- **NVIDIA Isaac Sim & Isaac Lab**
-- **Stable-Baselines3**
-- **Python 3.x**
+| Software              | Tested Version |
+|-----------------------|----------------|
+| **Operating System**  | Ubuntu 22.04 LTS |
+| **NVIDIA Driver**     | 550.144.03     |
+| **CUDA**              | 12.4           |
+| **Python**            | 3.10.15        |
+| **Isaac Sim**         | 4.2.0          |
+| **Isaac Lab**         | 1.4.0          |
+| **Stable-Baselines3** | 2.3.2          |
+| **PyTorch**           | 2.4.0          |
+| **Gymnasium**         | 0.29.0         |
+| **Ray**               | 2.41.1         |
+| **ROS 2 Humble**      | Local          |
+
+Ensure you have these dependencies or equivalent versions installed before running the project.
 
