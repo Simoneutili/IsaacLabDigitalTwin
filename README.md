@@ -1,4 +1,4 @@
-![Digital Twin](./images/DigitalTwin.png)
+![Digital Twin](./images/DigitalTwin.jpg)
 # Real2Sim Enhanced Digital Twin of TIAGo Robotic Manipulator
 
 This project contributes to the field of simulation calibration, aiming to reduce the simulation-to-reality (sim2real) gap. It focuses specifically on the NVIDIA Omniverse Isaac Sim simulation software and the Isaac Lab Reinforcement Learning (RL) framework.
