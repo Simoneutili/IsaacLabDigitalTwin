@@ -15,7 +15,7 @@ This work presents an architecture that:
 - **Algorithm Comparison:** Compares state-of-the-art Deep RL algorithms (SAC and PPO) via Stable-Baselines3.
 - **Hyperparameter Tuning:** Implements a pipeline to fine-tune learning curves and increase cumulative rewards.
 - **Integration of Simulation and Reality:** Validates the Digital Twin using Gazebo simulated TIAGo as a surrogate for the real robot (Sim2Sim).
-- - **Transfer Learning via Domain Randomization:** Leverages domain randomization to bridge the simulation-to-reality gap. The policy trained on Gazebo ground truth is effectively transferred to the real robot.
+-  **Transfer Learning via Domain Randomization:** Leverages domain randomization to bridge the simulation-to-reality gap. The policy trained on Gazebo ground truth is effectively transferred to the real robot.
 
 ## Repository Structure
 
