@@ -10,7 +10,7 @@ TiAGO digital twin environment environment.
 import gymnasium as gym
 
 from . import agents
-from .tiago_env_ros import TiagoEnv, TiagoEnvCfg
+from .tiago_env import TiagoEnv, TiagoEnvCfg
 
 ##
 # Register Gym environments.
@@ -18,7 +18,7 @@ from .tiago_env_ros import TiagoEnv, TiagoEnvCfg
 
 gym.register(
     id="Isaac-DigitalTwin-TiAGO-v0",
-    entry_point="tiago_RL.ISAACLAB_TEST:TiagoEnv",  # Path to the class, ensure it's correct
+    entry_point="tiago_RL.DigitalTwin:TiagoEnv",  # Path to the class, ensure it's correct
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": TiagoEnvCfg,

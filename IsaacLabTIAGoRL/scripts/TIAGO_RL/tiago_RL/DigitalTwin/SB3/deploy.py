@@ -58,7 +58,7 @@ from stable_baselines3.common.vec_env import VecNormalize
 from omni.isaac.lab.utils.dict import print_dict
 from omni.isaac.lab.utils.pretrained_checkpoint import get_published_pretrained_checkpoint
 
-import tiago_RL.ISAACLAB_TEST  # noqa: F401
+import tiago_RL.DigitalTwin  # noqa: F401
 from omni.isaac.lab_tasks.utils.parse_cfg import get_checkpoint_path, load_cfg_from_registry, parse_env_cfg
 from omni.isaac.lab_tasks.utils.wrappers.sb3 import Sb3VecEnvWrapper, process_sb3_cfg
 

@@ -66,7 +66,7 @@ from omni.isaac.lab.utils.assets import retrieve_file_path
 from omni.isaac.lab.utils.dict import print_dict
 from omni.isaac.lab.utils.io import dump_pickle, dump_yaml
 
-import tiago_RL.ISAACLAB_TEST  # noqa: F401
+import tiago_RL.DigitalTwin  # noqa: F401
 from omni.isaac.lab_tasks.utils.hydra import hydra_task_config
 
 
